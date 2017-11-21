@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstWindowApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="SlideShow" MaxWidth="1920" MaxHeight="1080" Height="768.8" Width="1358.4">
+    <Grid MaxWidth="1920" MaxHeight="1080" ScrollViewer.CanContentScroll="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Click for an image slideshow" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top" Width="236" Background="#FF08B9E5" FontSize="16" FontWeight="Bold" Focusable="False" BorderThickness="5" Height="40" Click="Button_Click"/>
+
+        <Button Content="Click to hide the slideshow" HorizontalAlignment="Left" Margin="280,20,0,0" VerticalAlignment="Top" Width="261" Background="#FF00AAE8" Height="28" FontSize="14" FontWeight="Bold" BorderThickness="5" Click="Button_Click_1"/>
+        <Image HorizontalAlignment="Left" Height="615" Margin="22,83,0,0" VerticalAlignment="Top" Width="1296"/>
+
     </Grid>
 </Window>
